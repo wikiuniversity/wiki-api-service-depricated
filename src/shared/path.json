@@ -1,0 +1,117 @@
+{
+  "document": {
+    "description": {
+      "url": "/:id/info/description",
+      "type": "get"
+    },
+    "rate": {
+      "url": "/:id/info/rate",
+      "type": "get"
+    },
+    "relevant": {
+      "url": "/:id/info/relevant",
+      "type": "get"
+    },
+    "layout": {
+      "url": "/:id/layout",
+      "type": "get"
+    },
+    "registry": {
+      "url": "/:id/registry",
+      "type": "get"
+    },
+    "set_rate": {
+      "url": "/:id/set_rate",
+      "type": "get"
+    }
+  },
+  "user": {
+    "bookmarks": {
+      "url": "/:id/bookmarks",
+      "type": "get"
+    },
+    "signup": {
+      "url": "/guest/signup",
+      "type": "get"
+    },
+    "signin": {
+      "url": "/guest/signin",
+      "type": "get"
+    },
+    "admin": {
+      "url": "/:id/role/admin",
+      "type": "post"
+    },
+    "person": {
+      "url": "/:id/info/person",
+      "type": "get"
+    },
+    "organization": {
+      "url": "/:id/info/organization",
+      "type": "get"
+    },
+    "fname": {
+      "url": "/:id/info/person/fname",
+      "type": "put"
+    },
+    "lname": {
+      "url": "/:id/info/person/lname",
+      "type": "put"
+    },
+    "photo": {
+      "url": "/:id/info/person/photo",
+      "type": "put"
+    },
+    "university": {
+      "url": "/:id/info/person/university",
+      "type": "put"
+    },
+    "faculty": {
+      "url": "/:id/info/person/faculty",
+      "type": "put"
+    },
+    "ban": {
+      "url": "/:id/admin/role/ban",
+      "type": "post"
+    },
+    "accept": {
+      "url": "/:id/admin/doc/accept",
+      "type": "post"
+    },
+    "dismiss": {
+      "url": "/:id/admin/doc/dismiss",
+      "type": "post"
+    },
+    "whoami": {
+      "url": "/guest/whoami",
+      "type": "get"
+    },
+    "logout": {
+      "url": "/guest/logout",
+      "type": "delete"
+    },
+    "about": {
+      "url": "/:id/info/person/about",
+      "type": "put"
+    },
+    "birthday": {
+      "url": "/:id/info/person/bday",
+      "type": "put"
+    },
+    "sex": {
+      "url": "/:id/info/person/sex",
+      "type": "put"
+    },
+    "email": {
+      "url": "/:id/info/person/email",
+      "type": "put"
+    }
+  },
+  "organization": {
+    "register": {
+      "url": "/register",
+      "type": "post"
+    }
+  },
+  "host": "http://honey-lake.ru:30000"
+}

@@ -1,0 +1,11 @@
+{
+    "uri": "mongodb://127.0.0.1:27017/wiki_uni",
+    "user": "",
+    "password": "",
+    "stand": "honey-lake.ru",
+    "port": 22,
+    "dstPort": 27017,
+    "privateKey": null,
+    "mlServiceUrl": "http://host.docker.internal:777",
+    "serverPort": 4000
+}

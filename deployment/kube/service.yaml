@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wiki-uni-api-service
+spec:
+  selector:
+    app: wiki_uni_api
+  ports:
+  - name: server-ports
+    protocol: TCP
+    port: 4000
+    targetPort: 4000
+    nodePort: 30000
+  - name: front-ports
+    protocol: TCP
+    port: 3000
+    targetPort: 3000
+    nodePort: 30001
+  type: LoadBalancer

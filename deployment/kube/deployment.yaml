@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wiki-uni-api-deployment
+  labels:
+    app: wiki_uni_api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: wiki_uni_api
+  template:
+    metadata:
+      labels:
+        app: wiki_uni_api
+    spec:
+      containers:
+        - name: wiki-uni-api-deployment
+          image: livanskin/wiki_uni_api:latest
+          resources:
+            requests:
+              cpu: "100m"
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+            - containerPort: 4000
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 25%
+      maxSurge: 25%
